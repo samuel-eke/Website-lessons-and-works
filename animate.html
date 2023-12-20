@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation style</title>
+    <style>
+        .block{
+            background-color: green;
+            width: 300px;
+            height: 120px;
+            animation-name: designcolor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            animation-direction: alternate;
+            transform: translateX(200px);
+        }
+        @keyframes designcolor {
+            0%{
+                background-color: green;
+                width: 300px;
+            }
+            30%{
+                background-color: black;
+            }
+            60%{
+                background-color: white;
+            }
+            100%{
+                background-color: darkred;
+                width: 400px;
+            }
+        }
+        .circle{
+            background-color: aqua;
+            border-radius: 50%;
+            width: 400px;
+            height: 200px;
+            animation-name: designcolor;
+            animation-duration: 6s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation</h2>
+    <div class="block"></div>
+    <div class="circle"></div>
+
+</body>
+</html>

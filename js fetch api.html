@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS fetch API</title>
+    <link rel="stylesheet" href="js fetch api.css">
+</head>
+<body>
+    <div class="contain">
+    <h1>Javascript fetch</h1>
+    <h3>Random Jokes</h3>
+        <div class="joke-area">
+            <div class="joke-show" id="joke-show"></div>
+            <button onclick="displayJoke()">Get a joke</button>
+        </div>
+    <p id="joke"></p>
+    </div>
+    <script src="C:/Users/APTECH LESSONS/Downloads/jquery-3.7.1.min.js"></script>
+    <script>
+        async function displayJoke(){
+            try{
+                const jokegotten = await fetch('https://v2.jokeapi.dev/joke/Any');
+                if (!jokegotten.ok) {
+                    throw new Error('This is the error that occured' + jokegotten.status);
+                }
+                const data = await jokegotten.json();
+                const jokeElement = document.getElementById("joke-show");
+                if (data.type === 'single') {
+                    jokeElement.textContent = data.joke;
+                } else {
+                    jokeElement.textContent = `${data.setup} ... ${data.delivery}`;
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        displayJoke();
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+    
+}
+@media screen and (max-width:576px ){
+    .contactbtn{
+        right: 0 !important;
+        width: 100%;
+        margin: auto;
+         
+    }
+}
+.row .card:hover{
+    box-shadow: 2px 4px 42px rgb(163, 161, 161);
+}

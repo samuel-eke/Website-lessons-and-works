@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    padding: 12px 10px;
+    background-color: rgb(23, 23, 118);
+    justify-content: space-between;
+    
+}
+.navbar>div a:hover{
+    border-bottom-style: dotted;
+    border-bottom-color: white;
+    cursor: pointer;
+}
+.navbar>div a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid-contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 12px;
+    padding: 8px;
+    justify-content: center;
+}
+.shop-item{
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.btn-cart{
+    background-color: blue;
+    width: 250px;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+}
+

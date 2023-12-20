@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up/Login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body{
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    background-color: rgb(41, 101, 212);
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: white;
+    color: rgb(41, 101, 212);
+}
+.end {
+    margin-top:1.1%;
+    margin-left: 65.7%;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="html-mq3.html">Home</a>
+        <a href="#">News</a>
+        <a href="mq3-contact.html">About Us</a>
+        <span class="end">
+        <a href="#">Sign up/Login</a>
+        </span>
+    </div>
+    <div class="tab" style="background-color: gainsboro;">
+        <div id="login" style="width: 700px; margin: auto;">
+            <form action="" method="get">
+            <legend style="text-align: center;">Login</legend><br>
+            <label for="">User Name</label><br>
+            <input type="text" placeholder="Username" required><br>
+            <label for="">Password</label><br>
+            <input type="password" name="" id="" placeholder="Password" required><br>
+            <input type="checkbox" name="" id=""><span>Remeber Me</span><br>
+            <input type="submit" value="Login">
+        </form>
+        </div>
+    </div><br><br>
+        <div id="sign-up" style="width: 700px; margin: auto;">
+            <legend style="text-align: center;">Sign up</legend>
+            <em>Register with us and earn big</em>
+            <form action="" method="get">
+                <label for="">First Name</label><br>
+                <input type="text" placeholder="Enter your first name"><br>
+                <label for="">Last Name</label><br>
+                <input type="text" placeholder="Enter your last name"><br>
+                <label for="">Email </label><br>
+                <input type="email" name="" id="" placeholder="Enter your email" required><br>
+                <label for="">Address</label><br>
+                <input type="text" placeholder="Enter your address"><br>
+                <select name="" id=""> 
+                    <option value="Male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+                <label for="">Password</label><br>
+                <input type="password" name="" id="" placeholder="Create password" required><br>
+                <label for="">Confirm Password</label><br>
+                <input type="password" name="" id="" placeholder="Repeat Password" required><br>
+                <input type="submit" value="Register">
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

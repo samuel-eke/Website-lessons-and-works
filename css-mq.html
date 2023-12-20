@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <style>
+    body{
+        background-color: red;
+        color: whitesmoke;
+        
+    }
+    @media screen and (max-width: 700px) {
+        body{
+            background-color: deepskyblue;
+        }
+    }
+    .wrapper{
+        overflow: auto;
+    }
+    #main{
+        margin-left: 4px;
+        font-size: 2em;
+    }
+    #leftsidebar{
+        float: none;
+        width: auto;
+    }
+    #menulist{
+        margin: 0;
+        padding: 0;
+    }
+    .menuitem{
+        background-color: blue;
+        border: 1px solid darkcyan;
+        border-radius: 4px;
+        list-style-type: none;
+        margin: 4px;
+        padding: 4px;
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+    @media screen and (min-width: 700px) {
+        #leftsidebar {
+            float: left;
+            width: 200px;
+        }
+        #main {
+            margin-left: 216px;
+        }
+    }
+   </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Media Query Example</h2>
+    <p>The color of the background changes depending on the size of the window</p>
+    
+    <div class="wrapper">
+        <div id="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Furniture</li>
+                <li class="menuitem">Cars</li>
+                <li class="menuitem">Kitchen</li>
+                <li class="menuitem">Banks</li>
+                <li class="menuitem">Hospitals</li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>Emerging Technologies</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi quaerat nulla totam dicta, illo nobis. Saepe, ducimus quas inventore dolor fugit eaque repellendus iusto obcaecati doloribus pariatur earum nemo vel voluptatibus asperiores ab rerum odio facere? Iure, consequuntur minus?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .news-item {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .news-item h3 {
+    margin: 0;
+  }
+  .news-item a {
+    color: blue;
+    text-decoration: none;
+  }
+  

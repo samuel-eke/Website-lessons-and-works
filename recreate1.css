@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-background{
+    background-image: url('images/Minimalistic Gray Wallpaper.jpg');
+}
+.button-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.tweet-btn{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: steelblue;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 15px;
+}
+.tweet-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.h1-caption, .sub-caption{
+    margin-left: 50px;
+    color: white;
+}
+.h1-caption{
+    margin-bottom: 30px;
+    font-size: 54px;
+}
+.sub-caption{
+    margin-bottom: 20px;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(66, 64, 64);
+    justify-content: space-around;
+    
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: rgb(24, 24, 32);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 50px 25px 50px;
+}
+.col{
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.col-1{
+    flex: 75%;
+    background-image: url('images/Minimalistic Gray Wallpaper.jpg');
+    color: white;
+    background-repeat: no-repeat;
+}
+.col-2{
+    flex: 20%;
+    margin-left: 20px;
+}
+
+.col-3{
+    flex: 100%;
+    background-color: rgb(102, 0, 255);
+    color: white;
+}
+.new-box{
+    background-color: green;
+    padding: 9px;
+    margin: 0;
+    width: 60px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transform: rotate(-30deg);
+    
+}
+.col-4{
+    flex: 40%;
+}
+.col-5{
+    flex: 50%;
+    margin-left: 20px;
+}
+.col-6{
+    flex: 55%;
+}
+
+.col-7{
+    flex: 40%;
+    margin-left: 20px;
+}
+.col-8{
+    flex: 40%;
+}
+
+.col-9{
+    flex: 20%;
+    margin-left: 20px;
+}
+.col-10{
+    flex: 25%;
+    margin-left: 20px;
+}
+footer{
+    background-color: gray;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-in{
+    background-color: darkgrey;
+    width: 90%;
+    padding: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header-background, .navbar{
+        flex-direction: column;
+    }
+    .row{
+        margin: 0 50px 0 50px;
+        
+    }
+    .col{
+        margin: 20px 0 0 0;
+        flex: 100%;
+    }
+    footer, .footer-in{
+        margin-top: 20px;
+    }
+
+    footer{
+        height: 300px;
+    }
+}

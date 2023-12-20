@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .contain{
+            width: 60%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        .btn{
+            width: 100%;
+            margin-top: 10px;
+            padding: 6px;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            box-shadow: 2px 2px 12px #878776b8;
+        }
+        .hide{
+            background-color: aqua;
+        }
+        .hide:hover{
+            background-color: aquamarine;
+            transform: scale(1.04,1.04);
+        }
+        .fade{
+            background-color: blueviolet;
+            color: white;
+        }
+        .fade:hover{
+            background-color: darkmagenta;
+            transform: scale(1.04,1.04);
+        }
+        .stop{
+            background-color: red;
+            color: white;
+        }
+        .stop:hover{
+            background-color: crimson;
+            transform: scale(1.04,1.04);
+
+        }
+        p{
+            height: 50px;
+            border: 1px ridge black;
+            border-radius: 4px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box">
+
+            <p>This text is for demonstration purposes</p>
+            <button class="btn hide">Hide/Show</button>
+            <button class="btn fade">Fade</button>
+            <button class="btn slide">Slide</button>
+            <button class="btn ani">Animate</button>
+            <button class="btn stop">Stop</button>
+        </div>
+    </div>
+    <script src="jquery file/jquery-3.7.1.min.js"></script>
+    <script src="jquery effects main.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

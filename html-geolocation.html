@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+<body>
+    <h2>Get Location</h2>
+    <p>I am currently located: <span id="locateme"></span></p>
+    <button onclick="getLocation()">Find Me</button>
+    <script>
+        var loc = document.getElementById("locateme");
+        function getLocation() {
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                loc.innerHTML = "Geolocation feature not supported on this browser";
+            }
+        }
+        function showPosition(position){
+            loc.innerHTML = "Latitude " + position.coords.latitude + " Longitude " + position.coords.longitude; 
+        }
+    </script>
+</body>
+</html>

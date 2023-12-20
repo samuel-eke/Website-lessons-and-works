@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    background-color: rgb(41, 101, 212);
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: white;
+    color: rgb(41, 101, 212);
+}
+.end {
+    margin-top:1.1%;
+    margin-left: 65.7%;
+}
+.row {
+    width: 70%; /*to center the container*/
+    margin: auto; /*to center the container*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    
+    
+}
+.card img{
+    display: block; /*to center your image*/
+    margin-left: auto; /*to center your image*/
+    margin-right: auto; /*to center your image*/
+    border: 6px ridge black;
+}
+.text-write{
+    text-align: center;
+}
+.column {
+    box-shadow: 2px 2px 3px black;
+    padding: 10px;
+    margin: 8px;
+}
+button {
+    display: block; /*to center your button*/
+    margin-left: auto; /*to center your button*/
+    margin-right: auto; /*to center your button*/
+    width: 125px;
+    padding: 8px 10px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.forminput, textarea {
+    
+    width: 150%;
+    padding: 10px 12px;
+    border: none;
+    background-color: aliceblue;
+    margin-top: 9px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    resize: none;
+} 
+input:focus {
+    outline: none;
+    border-bottom-style: solid;
+    background-color: rgba(245, 222, 179, 0);
+    color: rgb(90, 70, 70);
+}
+legend{
+    border-bottom: 20px;
+    font-size: 1.3em;
+}
+
+

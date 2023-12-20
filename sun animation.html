@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+    <style>
+        :root{
+            overflow: hidden;
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+        }
+        .sun{
+            background-color: darkgoldenrod;
+            border-radius:50%;
+            height: 100vh;
+            aspect-ratio: 2/2;
+            animation-name: riseofthesun;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes riseofthesun {
+            0%{
+                transform: translateY(110vh);
+                background-color: darkgoldenrod;
+                filter: brightness(20%);
+            }
+            50%{
+                background-color: rgb(234, 255, 0);
+            }
+            100%{
+                transform: translateY(10vh);
+                filter: brightness(100%);
+                background-color: rgb(255, 60, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sun animation</h1>
+    <div class="sun"></div>
+</body>
+</html>

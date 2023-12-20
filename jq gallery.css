@@ -1,0 +1,19 @@
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 250px;
+    height: 200px;
+    margin: 12px;
+    border: solid black 3px;
+}
+
+.subtext{
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+.subtext p{
+    font-style: italic;
+}

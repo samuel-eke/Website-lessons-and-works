@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+</head>
+<body>
+    <h1>Array Map method</h1>
+    <div id="show"></div>
+    <script>
+        const pictures_arra = ["imgs/51360.jpg", 'imgs/a-community-of-marshmallows-have-a-festive-gathering-around-a-campfire-roasting-l3nvxckv.jpeg', 'imgs/a-digital-artwork-depicts-a-futuristic-nativity-scene-in-a-cyber-themed-setting-gfkord0v.jpeg', "imgs/a-digital-artwork-depicts-a-futuristic-nativity-scene-in-a-cyber-themed-setting-gfkord0v.jpeg"];
+
+        const createPictures = pictures_arra.map(function(a){
+            return `<img src=${a} alt="" width="200" height="120"> `
+        });
+
+        document.getElementById("show").innerHTML = createPictures.join(" ");
+        
+    </script>
+</body>
+</html>

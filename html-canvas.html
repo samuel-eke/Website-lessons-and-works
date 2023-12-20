@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas </title>
+</head>
+<body>
+    <canvas id="aCanvas" width="250" height="170" style="border: 3px solid black; margin-bottom: 10px;"> 
+    </canvas><br>
+
+    <canvas id="bCanvas" width="250" height="170" style="border: 3px solid black;"></canvas><br>
+    <br>
+
+    <canvas id="cCanvas" width="250" height="170" style="border: 3px solid black;"></canvas>
+    <script>
+        var blank_canvas = document.getElementById("aCanvas"); 
+        var canvas_obj = blank_canvas.getContext("2d"); 
+        canvas_obj.fillStyle = "green"; //fillStyle colors the object
+        canvas_obj.fillRect(20, 10, 150, 50); //gives it a location and dimensions
+        canvas_obj.fillStyle = "brown";
+        canvas_obj.fillRect(20, 70, 150, 50);
+
+        var sec_canvas = document.getElementById("bCanvas");
+        var b_canvas_obj = sec_canvas.getContext("2d");
+        b_canvas_obj.moveTo(0, 0); //this line tells us where the line is starting from
+        b_canvas_obj.lineTo(250, 170);//here we tell it where to stop
+        b_canvas_obj.stroke(); //this line draws it on the screen
+    
+        //draw a circle on the canvas
+        var third_canvas = document.getElementById("cCanvas");
+        var c_canvas_obj = third_canvas.getContext("2d");
+        c_canvas_obj.beginPath();
+        c_canvas_obj.arc(90, 70, 50, 0, 2*Math.PI);
+        c_canvas_obj.stroke()
+    </script>
+</body>
+</html>

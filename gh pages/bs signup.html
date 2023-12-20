@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist\css\bootstrap.css">
+    <script src="bootstrap-5.2.3-dist\js\bootstrap.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <!--Navigation menu-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a href="bs navbar drop search.html" class="navbar-brand"><img src="images\Snowflake-Color.svg" alt="" width="120"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="bs navbar drop search.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#product" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-success m-2 "><a href="bs form.html" class="nav-link">Login</a></button>
+                <button class="btn btn-warning m-2">Signup</button>
+
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Find product" autocomplete="on">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Registration form using diodata-->
+    <h1 class="text-center mt-3">Create Account</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+        <form action="#" class="needs-validation" style="font-size: 1.2em;">
+            <div class="mb-3 mt-3">
+                <label for="" class="form-label">First Name</label>
+                <input type="text" class="form-control" placeholder="Enter first name" required>
+                <div class="invalid-feedback">Please fill this field</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="" class="form-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Enter first name" required>
+                <div class="invalid-feedback">Please fill this field</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" required pattern="[0-9]{3}[0-9]{4}[0-9]{4}" placeholder="Enter phone number">
+                <div class="invalid-feedback">Enter phone number according to pattern</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="" class="form-label">Password</label>
+                <input type="password" name="" id=" " class="form-control" placeholder="Create password" required>
+                <div class="invalid-feedback">Please valid password</div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="" class="form-label">Address</label>
+                <textarea name="" id="" rows="3" class="form-control"></textarea>
+            </div>
+            <label for="" class="form-label" style="font-weight: bold;">Gender</label>
+            <div class="form-check">
+                <label for="" class="form-label">Male</label>
+                <input type="radio" name="gener" id="" class="form-check-input" value="male">
+                
+            </div>
+            <div class="form-check">
+                <label for="" class="form-label">Female</label>
+                <input type="radio" name="gener" id="" class="form-check-input" value="male">
+            </div>
+            <label for="" class="form-label">Date of birth</label>
+            <input type="date" name="" id="">
+            <div class="form-check mt-2">
+                <input type="checkbox" name="" id="" class="form-check-input">
+                <label for="" class="form-check-label">Agree to terms and condition</label>
+            </div>
+            <div style="margin: auto; width: 200px;" class="mb-3 mt-3">
+            <button type="submit" class="btn btn-primary" style="width: 200px;">Create</button></div>
+            
+        </form>
+    </div>
+    <div class="col-sm mt-5">
+        <h1 class="text-center">Sign up using</h1>
+        <button class="btn btn-danger text-center p-3 mb-3" style="width: 100%; font-size: 1.5em;">Google</button>
+        <button class="btn btn-primary text-center p-3 mb-3" style="width: 100%; font-size: 1.5em;">Facebook</button>
+        <button class="btn btn-dark text-center p-3" style="width: 100%; font-size: 1.5em;">Apple ID</button>
+    </div>
+
+
+    </div>
+    </div>
+</body>
+</html>

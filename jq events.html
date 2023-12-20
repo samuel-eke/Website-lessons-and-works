@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQ Events</title>
+    <script src="jqury\jquery-3.7.0.min.js"></script>
+    <style>
+        .flex-contain{
+            display: flex;
+        }
+        #div1, #div2, #div3{
+            width: 80px;
+            height: 80px;
+            display: none;
+            margin-right: 12px;
+        }
+        #div1{
+            background-color: red;
+        }
+        #div2{
+            background-color: blue;
+        }
+        #div3{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQ Events and Effects - Fade</h1>
+    <p>The fade methods in jQuery</p>
+    <ul>
+        <li>
+            <a href="#"> fadeIn()</a></li>
+        <li>
+            <a href="">fadeOut()</a></li>
+        <li>
+            <a href="">fadeToggle()</a></li>
+        <li>
+            <a href="">fadeTo()</a></li>
+    </ul>
+
+    <br>
+    <button id="fade1" style="margin-bottom: 10px;">Fade in</button>
+    <button id="fade2" style="margin-bottom: 10px;">Fade out</button>
+    <button id="fade3" style="margin-bottom: 10px;">Fade toggle</button>
+    
+<div class="flex-contain">
+
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+    <div id="div3"></div>
+
+</div>
+    <script>
+        $(document).ready(function(){
+           
+                $("#div1").fadeIn();  //effect to be seen
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(1000);
+
+           $("#fade2").click(function(){
+                $("#div1").fadeOut();  //effect to be seen
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(1000);
+           });
+           $("#fade3").click(function(){
+                $("#div1").fadeToggle();  //effect to be seen
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(1000);
+           })
+        })
+    </script>
+</body>
+</html>

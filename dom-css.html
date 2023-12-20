@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .try{
+            width: 300px;
+            height: 150px;
+            margin: auto;
+            font-size: 2em;
+            text-align: center;
+            padding: 8px;
+        }
+        .contain{
+            width: 60%;
+            margin: auto;
+        }
+        button{
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            margin: 8px 0;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h1 style="text-align: center;">CSS Javascript Styling</h1>
+
+        <div class="try"></div><br>
+
+        <button onclick="turnRed()" onmouseover="moverA(this)" onmouseout="mout(this)">Turn Red</button>
+        <button onclick="turnGreen()" onmouseover="moverB(this)" onmouseout="mout(this)">Turn Green</button>
+    </div>
+    <script>
+       
+        function turnGreen() {
+            document.querySelector(".try").style.backgroundColor = "green";
+            document.querySelector(".try").style.borderStyle = "ridge";
+            document.querySelector(".try").style.borderWidth = "9px";
+            document.querySelector(".try").style.borderColor = "black";
+            document.querySelector(".try").innerHTML = "This has been turned to green";
+            document.querySelector(".try").style.color = "white";
+        }
+        function turnRed() {
+            document.querySelector(".try").style.backgroundColor = "red";
+            document.querySelector(".try").style.borderStyle = "ridge";
+            document.querySelector(".try").style.borderWidth = "9px";
+            document.querySelector(".try").style.borderColor = "black";
+            document.querySelector(".try").innerHTML = "This has been turned to red";
+            document.querySelector(".try").style.color = "white";
+        }
+        function moverA(obj){
+            obj.style.backgroundColor = "Red";
+            obj.style.color = "white";
+        }
+        function moverB(obj){
+            obj.style.backgroundColor = "green";
+            obj.style.color = "white";
+        }
+        function mout(obj){
+            obj.style.backgroundColor = "";
+            obj.style.color = "black";
+
+        }
+    </script>
+</body>
+</html>
